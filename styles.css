@@ -6,8 +6,8 @@ body {
 
 .section {
     width: 100%;
-    height: 160vh; /* 160% del alto de la pantalla */
-    transition: background-color 1s ease; /* Transición suave del color de fondo */
+    height: 160vh;
+    transition: background-color 1s ease;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,6 @@ body {
     color: white;
 }
 
-/* Puedes personalizar los colores de fondo aquí */
 .section:nth-child(1) { background-color: #3498db; }
 .section:nth-child(2) { background-color: #2ecc71; }
 .section:nth-child(3) { background-color: #e74c3c; }
