@@ -1,12 +1,23 @@
 body {
-  background-color: #FAFD5D;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
 
-h1 {
-  color: #333;
+.section {
+    width: 100%;
+    height: 160vh; /* 160% del alto de la pantalla */
+    transition: background-color 1s ease; /* Transición suave del color de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+    color: white;
 }
 
-p {
-  color: #666;
-}
+/* Puedes personalizar los colores de fondo aquí */
+.section:nth-child(1) { background-color: #3498db; }
+.section:nth-child(2) { background-color: #2ecc71; }
+.section:nth-child(3) { background-color: #e74c3c; }
+.section:nth-child(4) { background-color: #f39c12; }
+.section:nth-child(5) { background-color: #9b59b6; }
