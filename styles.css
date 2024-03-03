@@ -1,25 +1,83 @@
+/* css */
 body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-section {
-    height: 140vh; /* 140% del alto de la pantalla visible */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    background-color: #f2f2f2;
+.banner {
+  height: 51px;
+  overflow: hidden;
 }
 
-/* Estilos adicionales según tus preferencias */
-.seccion1 { background-color: #ffcccb; }
-.seccion2 { background-color: #ffb347; }
-.seccion3 { background-color: #bdecb6; }
-.seccion4 { background-color: #a0c4ff; }
-.seccion5 { background-color: #d4a5a5; }
+.carousel {
+  display: inline-block;
+  white-space: nowrap; /* Evita el salto de línea */
+  animation: carouselAnimation 60s linear infinite;
+}
 
-h2 {
-    color: #333;
+@keyframes carouselAnimation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.word {
+  display: inline-block;
+  white-space: nowrap;
+  margin-right: -4px;
+  font-family: courier, arial, helvetica;
+  font-size: 2em;
+}
+
+.seccion {
+  height: 120vh; /* 120% de la altura de la ventana */
+  background-color: #fff; /* Color de fondo blanco */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.seccion > * {
+  margin: 0;
+}
+
+.column-left {
+  flex: 1;
+}
+
+.column-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#seccion1 {
+  background-color: #FAFD5D; /* Gris claro */
+  font-family: courier, arial, optima;
+  
+}
+
+.column-left {font-size: 2.5em; /* Tamaño de fuente ajustado */
+margin-left: 20px; /* Margen izquierdo añadido */
+margin-top: -10%; /* Margen izquierdo añadido */
+}
+
+#seccion2 {
+  background-color: #C7B9FF; /* Gris claro */
+}
+
+#seccion3 {
+  background-color: #12A959; /* Gris claro */
+}
+
+#seccion4 {
+  background-color: #E2E2E2; /* Gris claro */
+}
+
+#seccion5 {
+  background-color: #80CAFF; /* Gris claro */
 }
