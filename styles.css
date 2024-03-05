@@ -163,6 +163,30 @@ margin-top: -10%; /* Margen izquierdo añadido */
 
 #seccion4 {
   background-color: #E2E2E2; /* Gris claro */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+        font-family: courier;
+}
+
+#seccion4 h2 {
+  margin-bottom: -60px; /* Ajusta el margen inferior del título */
+  margin-top: 30px;
+    font-size: 4em;
+}
+
+#seccion4 p {
+  margin-bottom: 0px; /* Ajusta el margen inferior del título */
+  margin-top: 0px;
+    font-size: 2em;
+}
+
+#seccion4 img {
+  max-width: 100%; /* Ajusta el ancho máximo de la imagen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin-top: -40px; /* Ajusta el margen superior de la imagen */
+  margin-bottom: 20px;
 }
 
 #seccion5 {
