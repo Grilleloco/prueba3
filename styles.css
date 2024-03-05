@@ -68,11 +68,105 @@ margin-top: -10%; /* Margen izquierdo añadido */
 
 #seccion2 {
   background-color: #C7B9FF; /* Gris claro */
+  display: flex;
+  flex-direction: column;
+}
+
+.column-left {
+  order: 1; /* Cambia el orden de aparición, ahora será primero */
+}
+
+.titulo {
+  text-align: center;
+  margin-top: 240px;
+
+}
+
+.titulo h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+        font-family: courier;
+
+}
+
+.titulo p {
+  font-size: 1em;
+      font-family: courier;
+
+}
+
+.column-right {
+  order: 2; /* Cambia el orden de aparición, ahora será segundo */
+}
+
+.recuadro-carousel {
+  margin-bottom: 50px;
+  display: flex;
+  overflow-x: auto; /* Permite desplazamiento horizontal si hay más recuadros */
+  scrollbar-width: none; /* Oculta las barras de desplazamiento en Firefox */
+  -ms-overflow-style: none; /* Oculta las barras de desplazamiento en Internet Explorer/Edge */
+}
+
+.recuadro {
+  background-color: #fff; /* Color de fondo blanco para los recuadros */
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  flex: 0 0 calc(50% - 20px); /* Ocupa el 50% del ancho con un margen entre ellos */
+    font-family: Sans-serif;
+
+}
+
+.recuadro:not(:last-child) {
+  margin-right: 10px; /* Añade margen derecho a todos los recuadros excepto al último */
+}
+
+/* Añade estilos para ocultar las barras de desplazamiento en Firefox */
+.recuadro-carousel::-webkit-scrollbar {
+  display: none;
 }
 
 #seccion3 {
   background-color: #12A959; /* Gris claro */
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
+
+.column-left,
+.column-right {
+  flex: 1;
+  padding: 20px; /* Añadido para dar espacio entre el borde y el contenido */
+  box-sizing: border-box; /* Evita que el padding afecte el ancho total */
+}
+
+h3 {
+  font-size: 1.2em;
+  color: #fff; /* Color del texto en la columna izquierda */
+  margin-bottom: 10px;
+}
+
+.cuadro-texto {
+  background-color: #fff; /* Color de fondo blanco para los cuadros de texto */
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+  text-align: center;
+  font-family: Sans-serif;
+  color: #333; /* Color del texto gris oscuro */
+  margin: 10px;
+}
+
+.column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+.cuadro-texto:nth-child(1),
+.cuadro-texto:nth-child(2) {
+  order: -1; /* Cambia el orden de los dos primeros cuadros para colocarlos arriba */
+}
+
+
 
 #seccion4 {
   background-color: #E2E2E2; /* Gris claro */
