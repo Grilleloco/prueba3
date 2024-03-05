@@ -131,6 +131,7 @@ margin-top: -10%; /* Margen izquierdo añadido */
   display: flex;
   justify-content: space-around;
   align-items: center;
+          font-family: courier;
 }
 
 .column-left {
