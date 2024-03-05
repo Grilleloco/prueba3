@@ -127,44 +127,36 @@ margin-top: -10%; /* Margen izquierdo añadido */
 }
 
 #seccion3 {
-  background-color: #12A959; /* Gris claro */
+  background-color: #12A959;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
 
-.column-left,
-.column-right {
+.column-left {
   flex: 1;
-  padding: 20px; /* Añadido para dar espacio entre el borde y el contenido */
-  box-sizing: border-box; /* Evita que el padding afecte el ancho total */
 }
 
-h3 {
-  font-size: 1.2em;
-  color: #fff; /* Color del texto en la columna izquierda */
-  margin-bottom: 10px;
+.column-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .cuadro-texto {
-  background-color: #fff; /* Color de fondo blanco para los cuadros de texto */
+  background-color: #fff;
   padding: 20px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
-  text-align: center;
-  font-family: Sans-serif;
-  color: #333; /* Color del texto gris oscuro */
   margin: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  flex: 0 0 calc(33.33% - 20px); /* Divide el ancho en tres partes con margen entre ellos */
+  font-family: Sans-serif;
 }
 
-.column-right {
-  display: flex;
-  flex-direction: column;
+.cuadro-texto:not(:last-child) {
+  margin-bottom: 10px; /* Añade margen inferior a todos los cuadros excepto al último */
 }
 
-.cuadro-texto:nth-child(1),
-.cuadro-texto:nth-child(2) {
-  order: -1; /* Cambia el orden de los dos primeros cuadros para colocarlos arriba */
-}
 
 
 
