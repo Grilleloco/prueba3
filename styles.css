@@ -66,6 +66,27 @@ margin-left: 20px; /* Margen izquierdo añadido */
 margin-top: -10%; /* Margen izquierdo añadido */
 }
 
+.overlay-btn {
+  margin-top: 51px;
+  margin-left: 81%;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 2;
+
+}
+
+.overlay-btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  font-family: courier, arial, optima;
+  font-size: 1.2em;
+}
+
 #seccion2 {
   background-color: #C7B9FF; /* Gris claro */
   display: flex;
