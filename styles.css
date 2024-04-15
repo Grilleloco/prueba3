@@ -179,11 +179,15 @@ margin-top: -10%; /* Margen izquierdo añadido */
   margin-bottom: 10px; /* Añade margen inferior a todos los cuadros excepto al último */
 }
 
+/* Añade estilos para la sección 3.1 */
+#seccion3_1 {
+  background-color: #E2E2E2;
+  font-family: courier;
 
-
+}
 
 #seccion4 {
-  background-color: #E2E2E2; /* Gris claro */
+  background-color: white; /* white */
   display: flex;
   flex-direction: column;
   align-items: center;
